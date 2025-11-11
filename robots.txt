@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dharunashokkumar.com/sitemap.xml
