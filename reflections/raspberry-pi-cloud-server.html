@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en-GB">
   <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DGWHDZMCF6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DGWHDZMCF6');
+</script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -214,8 +223,8 @@ public = no
 <h3>Access from Other Devices</h3>
 
 <p><strong>Windows:</strong> Open File Explorer, type `\\raspberrypi\PiStorage`</p>
-<p><strong>macOS:</strong> Finder ’ Go ’ Connect to Server ’ `smb://raspberrypi.local/PiStorage`</p>
-<p><strong>Linux:</strong> File manager ’ Network ’ Browse Network</p>
+<p><strong>macOS:</strong> Finder ï¿½ Go ï¿½ Connect to Server ï¿½ `smb://raspberrypi.local/PiStorage`</p>
+<p><strong>Linux:</strong> File manager ï¿½ Network ï¿½ Browse Network</p>
 
 <h2>Step 5: Remote Access Setup</h2>
 
@@ -293,7 +302,7 @@ rsync -av --delete /mnt/storage/ /mnt/backup/
 <pre><code>vcgencmd measure_temp
 </code></pre>
 
-<p>Installed active cooling when temps consistently exceeded 70°C. Now it stays around 45-55°C under load.</p>
+<p>Installed active cooling when temps consistently exceeded 70ï¿½C. Now it stays around 45-55ï¿½C under load.</p>
 
 <h2>Current Status and Usage</h2>
 
@@ -307,7 +316,7 @@ rsync -av --delete /mnt/storage/ /mnt/backup/
 <li><strong>Development environment</strong> hosting Git repositories and test websites</li>
 </ul>
 
-<p>Total cost: About ¹8,000 (Pi + accessories + drive) vs. ¹1,200/month for 1TB cloud storage = payback in 7 months.</p>
+<p>Total cost: About ï¿½8,000 (Pi + accessories + drive) vs. ï¿½1,200/month for 1TB cloud storage = payback in 7 months.</p>
 
 <h2>Performance Considerations</h2>
 

@@ -1,13 +1,22 @@
 <!doctype html>
 <html lang="en-GB">
   <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DGWHDZMCF6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DGWHDZMCF6');
+</script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Dharun Ashokkumar: Fixing My Raspberry Pi Cooling Issues (That Weird 'Tip Tip' Sound)</title>
 
-    <meta name="description" content="Troubleshooting and fixing Raspberry Pi 4 fan noise and cooling problems. Solutions include fan upgrade, heatsink case installation, and temperature optimization bringing temps from 55°C to 42°C.">
+    <meta name="description" content="Troubleshooting and fixing Raspberry Pi 4 fan noise and cooling problems. Solutions include fan upgrade, heatsink case installation, and temperature optimization bringing temps from 55ï¿½C to 42ï¿½C.">
     <meta name="keywords" content="Raspberry Pi cooling, fan noise, tip tip sound, Pi 4 temperature, heatsink case, Armor case, ball bearing fan, thermal management, overclock cooling, passive cooling">
     <meta name="author" content="Dharun Ashokkumar">
 
@@ -21,7 +30,7 @@
     <!-- start: opengraph tags to make this page a rich-object -->
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Fixing My Raspberry Pi Cooling Issues (That Weird 'Tip Tip' Sound)">
-      <meta property="og:description" content="How I solved Raspberry Pi 4 fan noise and reduced temperatures from 55°C to 42°C idle.">
+      <meta property="og:description" content="How I solved Raspberry Pi 4 fan noise and reduced temperatures from 55ï¿½C to 42ï¿½C idle.">
       <meta property="og:url" content="https://dharunashokkumar.com/reflections/tiptip-sound-project.html">
       <meta property="og:site_name" content="Dharun Ashokkumar">
     <!-- end: opengraph tags to make this page a rich-object -->
@@ -64,8 +73,8 @@
 
 <ul>
 <li>Rhythmic clicking/ticking noise (tip tip tip)</li>
-<li>Idle temperature around 55°C (131°F)</li>
-<li>Temperature spikes to 65-70°C under load</li>
+<li>Idle temperature around 55ï¿½C (131ï¿½F)</li>
+<li>Temperature spikes to 65-70ï¿½C under load</li>
 <li>Fan running constantly but not effectively cooling</li>
 <li>Noise getting progressively worse over weeks</li>
 </ul>
@@ -93,7 +102,7 @@
 
 <h3>Cause 3: Thermal Stress Cycles</h3>
 
-<p>Temperature cycling (cool ’ hot ’ cool) was causing expansion and contraction of plastic parts, making the fan mount loose and allowing vibration.</p>
+<p>Temperature cycling (cool ï¿½ hot ï¿½ cool) was causing expansion and contraction of plastic parts, making the fan mount loose and allowing vibration.</p>
 
 <h3>Cause 4: Inadequate Heat Dissipation</h3>
 
@@ -104,7 +113,7 @@
 <li>Restricted airflow in the case</li>
 </ul>
 
-<p>This created a vicious cycle: inadequate cooling ’ fan runs harder ’ more noise and wear.</p>
+<p>This created a vicious cycle: inadequate cooling ï¿½ fan runs harder ï¿½ more noise and wear.</p>
 
 <h2>Solution 1: Relocating the Pi</h2>
 
@@ -119,7 +128,7 @@
 </ul>
 
 <h3>Results</h3>
-<p>Noise reduced by about 30%, but the "tip tip" remained during load. Temperature dropped 2-3°C but still too high for comfort.</p>
+<p>Noise reduced by about 30%, but the "tip tip" remained during load. Temperature dropped 2-3ï¿½C but still too high for comfort.</p>
 
 <p><strong>Verdict:</strong> Helpful but not sufficient.</p>
 
@@ -136,7 +145,7 @@
 </ol>
 
 <h3>Results</h3>
-<p>Immediately after cleaning, noise reduced significantly and temperatures dropped 3-4°C. However, within a week, the tip-tip sound returned.</p>
+<p>Immediately after cleaning, noise reduced significantly and temperatures dropped 3-4ï¿½C. However, within a week, the tip-tip sound returned.</p>
 
 <p><strong>Verdict:</strong> Temporary fix; underlying problem remained.</p>
 
@@ -157,18 +166,18 @@
 <h3>Fan Specifications</h3>
 
 <ul>
-<li><strong>Size:</strong> 30mm × 30mm × 10mm (common Raspberry Pi size)</li>
+<li><strong>Size:</strong> 30mm ï¿½ 30mm ï¿½ 10mm (common Raspberry Pi size)</li>
 <li><strong>Voltage:</strong> 5V DC</li>
 <li><strong>Current:</strong> 0.1-0.2A (Pi can safely provide via GPIO)</li>
 <li><strong>Speed:</strong> 5000-6000 RPM</li>
 <li><strong>Bearing type:</strong> Ball bearing (crucial!)</li>
-<li><strong>Cost:</strong> ¹150-¹250 online</li>
+<li><strong>Cost:</strong> ï¿½150-ï¿½250 online</li>
 </ul>
 
 <h3>Installation</h3>
 
-<pre><code>Red wire ’ GPIO Pin 4 (5V)
-Black wire ’ GPIO Pin 6 (Ground)
+<pre><code>Red wire ï¿½ GPIO Pin 4 (5V)
+Black wire ï¿½ GPIO Pin 6 (Ground)
 </code></pre>
 
 <p>Mounted using original mounting holes with rubber grommets for vibration isolation.</p>
@@ -177,7 +186,7 @@ Black wire ’ GPIO Pin 6 (Ground)
 
 <ul>
 <li>Noise completely eliminatedfan is whisper-quiet</li>
-<li>Temperature dropped another 3-4°C</li>
+<li>Temperature dropped another 3-4ï¿½C</li>
 <li>Consistent, reliable cooling</li>
 <li>No degradation after months of continuous use</li>
 </ul>
@@ -203,7 +212,7 @@ Black wire ’ GPIO Pin 6 (Ground)
 <h3>Product: Geekworm Raspberry Pi 4 Armor Case</h3>
 
 <ul>
-<li><strong>Price:</strong> ¹800-¹1,200 (varies by seller)</li>
+<li><strong>Price:</strong> ï¿½800-ï¿½1,200 (varies by seller)</li>
 <li><strong>Material:</strong> CNC-machined aluminum alloy</li>
 <li><strong>Finish:</strong> Anodized black</li>
 <li><strong>Thermal pads:</strong> Included for CPU, RAM, power chip</li>
@@ -227,17 +236,17 @@ Black wire ’ GPIO Pin 6 (Ground)
 <p>Temperature comparison:</p>
 
 <pre><code>Before Armor Case:
-- Idle: 55°C (with active fan)
-- Light load: 60-65°C
-- Heavy load: 70-75°C
+- Idle: 55ï¿½C (with active fan)
+- Light load: 60-65ï¿½C
+- Heavy load: 70-75ï¿½C
 
 After Armor Case:
-- Idle: 42°C (passive cooling only!)
-- Light load: 45-50°C
-- Heavy load: 55-60°C
+- Idle: 42ï¿½C (passive cooling only!)
+- Light load: 45-50ï¿½C
+- Heavy load: 55-60ï¿½C
 </code></pre>
 
-<p>That's a <strong>13°C reduction at idle</strong> and completely silent operation!</p>
+<p>That's a <strong>13ï¿½C reduction at idle</strong> and completely silent operation!</p>
 
 <h2>Monitoring Temperature</h2>
 
@@ -279,8 +288,8 @@ watch -n 1 vcgencmd measure_temp
 <ul>
 <li>Massive tower heatsink with 40mm fan</li>
 <li>Overkill but extremely effective</li>
-<li>Can achieve sub-40°C even under heavy load</li>
-<li>Cost: ¹1,500-¹2,000</li>
+<li>Can achieve sub-40ï¿½C even under heavy load</li>
+<li>Cost: ï¿½1,500-ï¿½2,000</li>
 </ul>
 
 <h3>2. Flirc Aluminum Case</h3>
@@ -288,7 +297,7 @@ watch -n 1 vcgencmd measure_temp
 <li>Similar to Armor but different design</li>
 <li>Excellent passive cooling</li>
 <li>Premium build quality</li>
-<li>Cost: ¹2,500-¹3,000</li>
+<li>Cost: ï¿½2,500-ï¿½3,000</li>
 </ul>
 
 <h3>3. PWM Fan Control</h3>
@@ -296,7 +305,7 @@ watch -n 1 vcgencmd measure_temp
 <li>Use transistor to control fan speed based on temperature</li>
 <li>Quiet at low temps, ramps up under load</li>
 <li>Requires basic electronics knowledge</li>
-<li>Cost: ¹100-¹200 in parts</li>
+<li>Cost: ï¿½100-ï¿½200 in parts</li>
 </ul>
 
 <h3>4. Water Cooling (Experimental)</h3>
@@ -304,7 +313,7 @@ watch -n 1 vcgencmd measure_temp
 <li>Custom water blocks available</li>
 <li>Absolutely silent and cool</li>
 <li>Complex installation, risk of leaks</li>
-<li>Cost: ¹3,000-¹5,000</li>
+<li>Cost: ï¿½3,000-ï¿½5,000</li>
 <li><strong>Verdict:</strong> Cool factor high, practicality low</li>
 </ul>
 
@@ -347,18 +356,18 @@ watch -n 1 vcgencmd measure_temp
 <h3>Safe Operating Range</h3>
 
 <ul>
-<li><strong>Idle: 40-50°C</strong>  Good</li>
-<li><strong>Light load: 50-60°C</strong>  Normal</li>
-<li><strong>Heavy load: 60-70°C</strong>  Acceptable</li>
-<li><strong>Sustained 70-80°C</strong>  Thermal throttling begins</li>
-<li><strong>Above 80°C</strong>  Automatic frequency reduction, performance impact</li>
-<li><strong>Above 85°C</strong>  System will throttle aggressively</li>
+<li><strong>Idle: 40-50ï¿½C</strong>  Good</li>
+<li><strong>Light load: 50-60ï¿½C</strong>  Normal</li>
+<li><strong>Heavy load: 60-70ï¿½C</strong>  Acceptable</li>
+<li><strong>Sustained 70-80ï¿½C</strong>  Thermal throttling begins</li>
+<li><strong>Above 80ï¿½C</strong>  Automatic frequency reduction, performance impact</li>
+<li><strong>Above 85ï¿½C</strong>  System will throttle aggressively</li>
 </ul>
 
 <h3>When to Worry</h3>
 
 <ul>
-<li>Idle temps consistently above 60°C</li>
+<li>Idle temps consistently above 60ï¿½C</li>
 <li>Hitting thermal throttling during normal use</li>
 <li>Temperature rapidly cycling (sign of poor thermal contact)</li>
 <li>Throttling icon appearing (thermometer in top-right corner)</li>
@@ -368,18 +377,18 @@ watch -n 1 vcgencmd measure_temp
 
 <h3>My Total Cooling Investment</h3>
 
-<pre><code>Ball-bearing fan:       ¹200
-Armor heatsink case:    ¹1,000
-Thermal paste:          ¹150
+<pre><code>Ball-bearing fan:       ï¿½200
+Armor heatsink case:    ï¿½1,000
+Thermal paste:          ï¿½150
 -----------------------------------
-Total:                  ¹1,350
+Total:                  ï¿½1,350
 </code></pre>
 
 <h3>Benefits Achieved</h3>
 
 <ul>
 <li><strong>Silent operation</strong>  no fan noise at all</li>
-<li><strong>13°C cooler</strong>  extends component lifespan</li>
+<li><strong>13ï¿½C cooler</strong>  extends component lifespan</li>
 <li><strong>No thermal throttling</strong>  consistent performance</li>
 <li><strong>Professional appearance</strong>  aluminum case looks great</li>
 <li><strong>Peace of mind</strong>  no worried about cooling failures</li>
@@ -393,13 +402,13 @@ Total:                  ¹1,350
 
 <p><strong>3. Temperature headroom matters.</strong> Running cooler extends hardware life and allows for future overclocking if needed.</p>
 
-<p><strong>4. Quality components are worth it.</strong> The difference between a ¹50 fan and ¹200 fan is night and day.</p>
+<p><strong>4. Quality components are worth it.</strong> The difference between a ï¿½50 fan and ï¿½200 fan is night and day.</p>
 
 <p><strong>5. Monitor your system.</strong> Regular temperature checks catch problems before they become critical.</p>
 
 <h2>Conclusion</h2>
 
-<p>That annoying "tip tip tip" sound led me down a rabbit hole of thermal management, but the result is a Raspberry Pi that runs cool, quiet, and reliably 24/7. From 55°C idle with noisy fan to 42°C passive coolingthat's the power of proper thermal design.</p>
+<p>That annoying "tip tip tip" sound led me down a rabbit hole of thermal management, but the result is a Raspberry Pi that runs cool, quiet, and reliably 24/7. From 55ï¿½C idle with noisy fan to 42ï¿½C passive coolingthat's the power of proper thermal design.</p>
 
 <p>If your Pi is making weird sounds or running hot, don't ignore it. Whether it's a simple fan upgrade or a full aluminum case, the investment in proper cooling pays dividends in reliability, performance, and sanity.</p>
 

@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en-GB">
   <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DGWHDZMCF6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DGWHDZMCF6');
+</script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -54,7 +63,7 @@
 
 <p>After corrupting my Raspberry Pi's SD card twice due to sudden power cuts, I learned an important lesson: running a 24/7 server without backup power is asking for trouble. Add my Jio AirFiber router to the mix, and every power outage meant losing both internet and my cloud server.</p>
 
-<p>Here's how I built a reliable, affordable backup power system for under ¹4,000 that provides hours of runtime and automatic clean shutdowns.</p>
+<p>Here's how I built a reliable, affordable backup power system for under ï¿½4,000 that provides hours of runtime and automatic clean shutdowns.</p>
 
 <h2>The Problem</h2>
 
@@ -89,7 +98,7 @@
 
 <h3>Recommended Options</h3>
 
-<h4>Option A: Artis 650VA UPS (¹2,400-¹2,600)</h4>
+<h4>Option A: Artis 650VA UPS (ï¿½2,400-ï¿½2,600)</h4>
 <ul>
 <li>650VA / 360W capacity</li>
 <li>2-3 hour runtime for router alone</li>
@@ -99,7 +108,7 @@
 <li>Replaceable battery (easy maintenance)</li>
 </ul>
 
-<h4>Option B: Zebronics ZEB-U725 (¹2,800-¹3,000)</h4>
+<h4>Option B: Zebronics ZEB-U725 (ï¿½2,800-ï¿½3,000)</h4>
 <ul>
 <li>725VA / 400W capacity</li>
 <li>Slightly longer runtime than Artis</li>
@@ -125,8 +134,8 @@
 
 <pre><code>Load: 22W (router 12W + Pi 10W)
 Battery: 12V 7Ah typical
-Runtime = (Battery Wh × Efficiency) / Load
-Runtime = (84Wh × 0.7) / 22W
+Runtime = (Battery Wh ï¿½ Efficiency) / Load
+Runtime = (84Wh ï¿½ 0.7) / 22W
 Runtime H 2.5-3 hours
 </code></pre>
 
@@ -134,14 +143,14 @@ Runtime H 2.5-3 hours
 
 <h2>Part 2: Mini-UPS for Direct DC Power</h2>
 
-<p>While the main UPS works, using AC output ’ wall adapters ’ DC is inefficient. Mini-UPS modules provide direct 5V/12V DC with integrated battery backup.</p>
+<p>While the main UPS works, using AC output ï¿½ wall adapters ï¿½ DC is inefficient. Mini-UPS modules provide direct 5V/12V DC with integrated battery backup.</p>
 
 <h3>5V Mini-UPS for Raspberry Pi</h3>
 
 <p>Search for "5V DC UPS" or "Raspberry Pi UPS" on Amazon/AliExpress:</p>
 
 <ul>
-<li><strong>Price:</strong> ¹800-¹1,200</li>
+<li><strong>Price:</strong> ï¿½800-ï¿½1,200</li>
 <li><strong>Battery:</strong> Typically 18650 lithium cells (2-4 cells)</li>
 <li><strong>Output:</strong> 5V 3A (sufficient for Pi 4)</li>
 <li><strong>Runtime:</strong> 4-6 hours for Raspberry Pi alone</li>
@@ -153,7 +162,7 @@ Runtime H 2.5-3 hours
 <p>For Jio AirFiber or similar 12V routers:</p>
 
 <ul>
-<li><strong>Price:</strong> ¹1,000-¹1,500</li>
+<li><strong>Price:</strong> ï¿½1,000-ï¿½1,500</li>
 <li><strong>Battery:</strong> 12V lithium-ion pack</li>
 <li><strong>Output:</strong> 12V 2A</li>
 <li><strong>Runtime:</strong> 3-5 hours for typical router</li>
@@ -172,12 +181,12 @@ Runtime H 2.5-3 hours
 
 <h2>My Recommended Setup</h2>
 
-<h3>Configuration 1: Maximum Protection (¹4,000)</h3>
+<h3>Configuration 1: Maximum Protection (ï¿½4,000)</h3>
 
 <ul>
-<li>Artis 650VA UPS (¹2,500)  Main power backup</li>
-<li>5V mini-UPS (¹1,000)  Raspberry Pi dedicated backup</li>
-<li>12V mini-UPS (¹1,200)  Router dedicated backup</li>
+<li>Artis 650VA UPS (ï¿½2,500)  Main power backup</li>
+<li>5V mini-UPS (ï¿½1,000)  Raspberry Pi dedicated backup</li>
+<li>12V mini-UPS (ï¿½1,200)  Router dedicated backup</li>
 </ul>
 
 <p><strong>Advantages:</strong></p>
@@ -188,7 +197,7 @@ Runtime H 2.5-3 hours
 <li>Modular  can replace/upgrade components individually</li>
 </ul>
 
-<h3>Configuration 2: Budget-Friendly (¹2,500)</h3>
+<h3>Configuration 2: Budget-Friendly (ï¿½2,500)</h3>
 
 <ul>
 <li>Artis 650VA UPS only</li>
@@ -204,7 +213,7 @@ Runtime H 2.5-3 hours
 
 <p><strong>Trade-offs:</strong></p>
 <ul>
-<li>Power conversion losses (AC’DC’AC’DC)</li>
+<li>Power conversion losses (ACï¿½DCï¿½ACï¿½DC)</li>
 <li>Slightly shorter runtime due to inefficiency</li>
 </ul>
 
@@ -273,7 +282,7 @@ while True:
 <li>Safe shutdown scripts</li>
 <li>Power monitoring via I2C</li>
 <li>Automatic startup when power returns</li>
-<li>Price: ¹3,000-¹4,000</li>
+<li>Price: ï¿½3,000-ï¿½4,000</li>
 </ul>
 
 <h2>Monitoring and Maintenance</h2>
@@ -284,7 +293,7 @@ while True:
 
 <ul>
 <li>Test monthly by simulating power failure</li>
-<li>Replace battery every 2-3 years (¹800-¹1,200 for 12V 7Ah)</li>
+<li>Replace battery every 2-3 years (ï¿½800-ï¿½1,200 for 12V 7Ah)</li>
 <li>Keep UPS in cool, ventilated area</li>
 <li>Don't fully discharge  hurts battery lifespan</li>
 </ul>
@@ -339,17 +348,17 @@ echo "$(date): Power failure detected" >> /var/log/power-events.log
 
 <h3>Total Investment</h3>
 
-<pre><code>Artis 650VA UPS:        ¹2,500
-5V Mini-UPS:            ¹1,000
-12V Mini-UPS:           ¹1,200
+<pre><code>Artis 650VA UPS:        ï¿½2,500
+5V Mini-UPS:            ï¿½1,000
+12V Mini-UPS:           ï¿½1,200
 -----------------------------------
-Total:                  ¹4,700
+Total:                  ï¿½4,700
 </code></pre>
 
 <h3>What You Get</h3>
 
 <ul>
-<li>Protection from SD card corruption (saved me ¹2,000+ in lost work)</li>
+<li>Protection from SD card corruption (saved me ï¿½2,000+ in lost work)</li>
 <li>Uninterrupted internet during short outages</li>
 <li>Peace of mind for server uptime</li>
 <li>4+ hour runtime for critical devices</li>
@@ -359,9 +368,9 @@ Total:                  ¹4,700
 <h3>Alternative Costs</h3>
 
 <ul>
-<li><strong>Raspberry Pi UPS HAT:</strong> ¹3,500-¹4,500 (Pi only, not router)</li>
-<li><strong>Enterprise UPS:</strong> ¹6,000-¹15,000 (overkill for this use)</li>
-<li><strong>Generator:</strong> ¹30,000+ (loud, expensive, fuel costs)</li>
+<li><strong>Raspberry Pi UPS HAT:</strong> ï¿½3,500-ï¿½4,500 (Pi only, not router)</li>
+<li><strong>Enterprise UPS:</strong> ï¿½6,000-ï¿½15,000 (overkill for this use)</li>
+<li><strong>Generator:</strong> ï¿½30,000+ (loud, expensive, fuel costs)</li>
 </ul>
 
 <h2>Troubleshooting Common Issues</h2>
@@ -396,7 +405,7 @@ Total:                  ¹4,700
 
 <h2>Lessons Learned</h2>
 
-<p><strong>1. Prevention is cheaper than recovery:</strong> ¹4,000 for UPS vs. hours of work recreating corrupted systems.</p>
+<p><strong>1. Prevention is cheaper than recovery:</strong> ï¿½4,000 for UPS vs. hours of work recreating corrupted systems.</p>
 
 <p><strong>2. Don't skimp on power supply quality:</strong> Cheap UPS with poor voltage regulation can damage devices.</p>
 
@@ -408,7 +417,7 @@ Total:                  ¹4,700
 
 <h2>Conclusion</h2>
 
-<p>Building a backup power system for Raspberry Pi and Jio AirFiber router is straightforward and affordable. The combination of a standard UPS plus mini-UPS modules provides hours of runtime at under ¹4,000less than the cost of replacing one corrupted SD card and lost work.</p>
+<p>Building a backup power system for Raspberry Pi and Jio AirFiber router is straightforward and affordable. The combination of a standard UPS plus mini-UPS modules provides hours of runtime at under ï¿½4,000less than the cost of replacing one corrupted SD card and lost work.</p>
 
 <p>For anyone running a home server, NAS, or critical network equipment, backup power isn't optionalit's essential infrastructure. The peace of mind knowing your systems will survive power outages is well worth the investment.</p>
 

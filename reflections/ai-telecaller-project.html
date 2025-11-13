@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en-GB">
   <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DGWHDZMCF6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DGWHDZMCF6');
+</script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -101,7 +110,7 @@
 <ul>
 <li><strong>SIM card</strong>  Active cellular plan with voice calling enabled</li>
 <li><strong>Power supply</strong>  Stable 5V source (SIM800L can draw 2A during calls)</li>
-<li><strong>Capacitors</strong>  1000µF to handle current spikes from SIM800L</li>
+<li><strong>Capacitors</strong>  1000ï¿½F to handle current spikes from SIM800L</li>
 <li><strong>Resistors</strong>  For voltage dividers if needed</li>
 <li><strong>Breadboard and jumper wires</strong>  For prototyping</li>
 </ul>
@@ -109,21 +118,21 @@
 <h2>Wiring the System</h2>
 
 <h3>ESP32 to SIM800L</h3>
-<pre><code>ESP32 TX (GPIO17) ’ SIM800L RX
-ESP32 RX (GPIO16) ’ SIM800L TX
-ESP32 GND ’ SIM800L GND
-SIM800L VCC ’ 3.7V-4.2V power source (with 1000µF capacitor)
+<pre><code>ESP32 TX (GPIO17) ï¿½ SIM800L RX
+ESP32 RX (GPIO16) ï¿½ SIM800L TX
+ESP32 GND ï¿½ SIM800L GND
+SIM800L VCC ï¿½ 3.7V-4.2V power source (with 1000ï¿½F capacitor)
 </code></pre>
 
 <h3>ISD1820 to SIM800L</h3>
-<pre><code>ISD1820 SP+ ’ SIM800L MIC+
-ISD1820 SP- ’ SIM800L MIC-
-ISD1820 VCC ’ 5V
-ISD1820 GND ’ Common GND
-ISD1820 PLAYE ’ ESP32 GPIO (for trigger control)
+<pre><code>ISD1820 SP+ ï¿½ SIM800L MIC+
+ISD1820 SP- ï¿½ SIM800L MIC-
+ISD1820 VCC ï¿½ 5V
+ISD1820 GND ï¿½ Common GND
+ISD1820 PLAYE ï¿½ ESP32 GPIO (for trigger control)
 </code></pre>
 
-<p><strong>Critical note:</strong> The SIM800L is extremely sensitive to power quality. Use a dedicated power supply capable of providing at least 2A, and add a large capacitor (1000µF or more) close to the module to prevent brownouts during transmission.</p>
+<p><strong>Critical note:</strong> The SIM800L is extremely sensitive to power quality. Use a dedicated power supply capable of providing at least 2A, and add a large capacitor (1000ï¿½F or more) close to the module to prevent brownouts during transmission.</p>
 
 <h2>Programming the ESP32</h2>
 
@@ -221,10 +230,10 @@ void makeCallWithMessage(String number) {
 
 <p>For AI-generated audio, replace ISD1820 with DFPlayer Mini:</p>
 
-<pre><code>ESP32 RX (GPIO4) ’ DFPlayer TX
-ESP32 TX (GPIO2) ’ DFPlayer RX
-DFPlayer SPK+ ’ SIM800L MIC+
-DFPlayer SPK- ’ SIM800L MIC-
+<pre><code>ESP32 RX (GPIO4) ï¿½ DFPlayer TX
+ESP32 TX (GPIO2) ï¿½ DFPlayer RX
+DFPlayer SPK+ ï¿½ SIM800L MIC+
+DFPlayer SPK- ï¿½ SIM800L MIC-
 </code></pre>
 
 <p>Use the DFRobotDFPlayerMini library to control playback programmatically.</p>
@@ -258,7 +267,7 @@ DFPlayer SPK- ’ SIM800L MIC-
 
 <h3>Challenge 1: SIM800L Power Issues</h3>
 <p><strong>Problem:</strong> Module keeps resetting, showing "UNDER-VOLTAGE WARNING"</p>
-<p><strong>Solution:</strong> Use dedicated 3.7V-4.2V power supply with at least 2A capacity. Add 1000µF capacitor across VCC and GND. Don't power from ESP32's 3.3V pin.</p>
+<p><strong>Solution:</strong> Use dedicated 3.7V-4.2V power supply with at least 2A capacity. Add 1000ï¿½F capacitor across VCC and GND. Don't power from ESP32's 3.3V pin.</p>
 
 <h3>Challenge 2: Call Audio Quality</h3>
 <p><strong>Problem:</strong> Voice message sounds distorted or too quiet</p>
