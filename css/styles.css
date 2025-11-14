@@ -195,21 +195,12 @@ ul.archive {
   display: none;
 }
 
-.home-page .more-info-and-links {
-  opacity: 0.5;
-}
-
 .disclaimer {
   display: block;
   background-color: #eee;
   padding: 1rem;
   margin-top: 3.6em;
   margin-bottom: 3.6em;
-}
-
-.warning {
-  background-color: #f22;
-  color: #fff;
 }
 
 /*	************************************************** 
@@ -240,12 +231,6 @@ img {
   display: block;
   width: 100%;
   height: auto;
-  /* the '&' is a SASS-parent-selector. 
-  	more info: https://sass-lang.com/documentation/style-rules/parent-selector
-  	*/
-}
-img.addBorder {
-  border: 1px solid #eee;
 }
 
 .video {
@@ -463,36 +448,6 @@ a:active {
 a:link#active_page {
   background: none;
   font-weight: 900;
-}
-
-a[data-linkstatus] {
-  padding-right: 0;
-}
-a[data-linkstatus]::after {
-  content: attr(data-linkstatus);
-  background-color: rgba(204, 204, 204, 0.33);
-  color: #555;
-  font-size: 0.67rem;
-  font-weight: 300;
-  font-style: italic;
-  padding: 0.1125rem 0.225rem;
-  margin: auto 0.225rem;
-  margin-right: 0;
-}
-
-a.deadlink::after {
-  background-color: rgba(255, 34, 34, 0.0666666667);
-}
-a.deadlink:hover {
-  background: rgba(255, 34, 34, 0.0666666667);
-  color: #f22;
-}
-a.deadlink:hover::after {
-  background-color: rgba(255, 34, 34, 0.0666666667);
-}
-
-img.clickable {
-  cursor: pointer;
 }
 .social-links {
     display: flex;
@@ -922,71 +877,12 @@ ul.archive.thumblist li:nth-child(3n) {
     display: initial;
   }
 }
-/* 
-	within a post,
-	show/hide private items (images, text) in a post, 
-	depending on the Jekyll Environment  
+/*
+	featured post marker for archive pages
 */
-.private_item {
-  /* note: "development" is jekyll's default environment */
-  /* here, items classed .private_item will not display on the page */
-  display: none !important;
-}
-
-/* 
-	(on an .archive or .single page)
-	with the title of a post,
-	indicate that a post is private or featured.
-*/
-.private_post {
-  background-color: #555;
-  color: #fff;
-}
-
 .featured_post {
   background-color: #fb0;
   color: #fff;
-}
-
-.post .private_post {
-  /* write the post's status before the title */
-  font-size: 0.67rem;
-  font-weight: 300;
-  font-style: italic;
-  padding: 0.1125rem 0.225rem;
-  margin: auto 0.225rem auto 0;
-}
-
-.archive:not(.thumblist) .private_post,
-.archive:not(.thumblist) .featured_post {
-  /* show a round dot before the post-title */
-  height: 0.5rem;
-  width: 0.5rem;
-  border-radius: 50%;
-  padding: 0;
-  margin: auto 0.225rem;
-  display: inline-block;
-}
-
-/* 
-	(on an .archive.thumblist page)
-	indicate that a post is private.
-*/
-.archive.thumblist li a .thumbnail .private_post {
-  /* method 1: cover entire list-item with an overlay*/
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: url("/assets/css/slash-ccc-4px.gif");
-  background-repeat: repeat;
-  background-color: rgba(255, 34, 34, 0.0666666667);
-  /* method 2: draw a red line at the top of the list-item */
-  background-color: #f22;
-  height: 0;
-  font-weight: 900;
-  color: #fff;
-  padding: 0.25rem 0;
-  margin: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
